@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuzziNews — World Current Affairs & Breaking News</title>
+  <meta name="description" content="Get concise, reliable updates on world events. Breaking news, analysis, and context from BuzziNews.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="BuzziNews — World Current Affairs & Breaking News">
+  <meta property="og:description" content="Get concise, reliable updates on world events. Breaking news, analysis, and context from BuzziNews.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://buzzinews.online">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BuzziNews — World Current Affairs & Breaking News">
+  <meta name="twitter:description" content="Get concise, reliable updates on world events. Breaking news, analysis, and context from BuzziNews.">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">B</div>
+        <span>BuzziNews</span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="btn-icon" aria-label="Search">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </button>
+        <button class="btn-primary">Subscribe</button>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-actions">
+          <button class="btn-icon">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            Search
+          </button>
+          <button class="btn-primary">Subscribe</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Trending Ticker -->
+  <div class="trending-ticker">
+    <div class="container ticker-content">
+      <div class="ticker-label">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+        </svg>
+        <span>Trending Now</span>
+      </div>
+      <div class="ticker-wrapper">
+        <div class="ticker-items">
+          <span class="ticker-item">Global stock markets react to central bank signals</span>
+          <span class="ticker-separator">•</span>
+          <span class="ticker-item">Ceasefire talks resume amid regional tensions</span>
+          <span class="ticker-separator">•</span>
+          <span class="ticker-item">Breakthrough in climate summit negotiations</span>
+          <span class="ticker-separator">•</span>
+          <span class="ticker-item">Tech export rules updated by major economies</span>
+          <span class="ticker-separator">•</span>
+          <span class="ticker-item">Pharmaceutical breakthrough in malaria treatment shows promise</span>
+          <span class="ticker-separator">•</span>
+          <span class="ticker-item">Renewable energy investment reaches record high</span>
+          <span class="ticker-separator">•</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div style="max-width: 64rem;">
+        <h1>World Affairs, Distilled</h1>
+        <p class="hero-subtitle">
+          The stories shaping our planet, explained. Fast summaries, original reporting, and context you can trust.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-hero btn-hero-primary">Subscribe to Daily Brief</button>
+          <a href="#latest" class="btn-hero btn-hero-secondary">Browse Latest News</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Stories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Stories</h2>
+        <p class="section-subtitle">Top stories from around the world</p>
+      </div>
+      
+      <div class="news-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <!-- Featured Article 1 -->
+        <a href="article.html" class="news-card" data-category="Business">
+          <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1709715357520-5e1047a2b691?w=800" alt="Global stock markets">
+            <div style="position: absolute; top: 1rem; left: 1rem;">
+              <span class="category-badge" style="background: #D1FAE5; color: #065F46;">Business</span>
+            </div>
+          </div>
+          <div class="news-card-content">
+            <h3 class="news-card-title">Global stock markets react to central bank signals</h3>
+            <p class="news-card-excerpt">Major stock indices showed volatility following statements from central bank officials hinting at potential policy shifts in the coming quarters.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-primary); font-size: 0.875rem; font-weight: 500;">
+              Read more <span>→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Featured Article 2 -->
+        <a href="article.html" class="news-card" data-category="Politics">
+          <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1580282121462-a4e495132f95?w=800" alt="Ceasefire talks">
+            <div style="position: absolute; top: 1rem; left: 1rem;">
+              <span class="category-badge" style="background: #DBEAFE; color: #1E40AF;">Politics</span>
+            </div>
+          </div>
+          <div class="news-card-content">
+            <h3 class="news-card-title">Ceasefire talks resume amid regional tensions</h3>
+            <p class="news-card-excerpt">Diplomatic efforts intensified today as international mediators convened new rounds of ceasefire negotiations.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-primary); font-size: 0.875rem; font-weight: 500;">
+              Read more <span>→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Featured Article 3 -->
+        <a href="article.html" class="news-card" data-category="Environment">
+          <div class="news-card-image">
+            <img src="https://images.unsplash.com/photo-1584269958246-ef20a3fd2466?w=800" alt="Climate summit">
+            <div style="position: absolute; top: 1rem; left: 1rem;">
+              <span class="category-badge" style="background: #D1FAE5; color: #065F46;">Environment</span>
+            </div>
+          </div>
+          <div class="news-card-content">
+            <h3 class="news-card-title">Breakthrough in climate summit negotiations</h3>
+            <p class="news-card-excerpt">After days of intense negotiations, delegates reached a landmark agreement on emissions reductions and climate finance.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-primary); font-size: 0.875rem; font-weight: 500;">
+              Read more <span>→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filter -->
+  <div id="latest" class="category-filter">
+    <div class="container category-filter-content">
+      <div class="filter-label">
+        <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+        </svg>
+        <span>Filter:</span>
+      </div>
+      <div class="category-buttons">
+        <button class="category-btn active" data-category="All">All</button>
+        <button class="category-btn" data-category="Politics">Politics</button>
+        <button class="category-btn" data-category="Business">Business</button>
+        <button class="category-btn" data-category="Technology">Technology</button>
+        <button class="category-btn" data-category="Environment">Environment</button>
+        <button class="category-btn" data-category="Health">Health</button>
+        <button class="category-btn" data-category="Sports">Sports</button>
+        <button class="category-btn" data-category="Science">Science</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest News -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Latest News</h2>
+        <p class="section-subtitle">All the latest stories</p>
+      </div>
+      
+      <div class="news-grid" id="news-grid">
+        <!-- News Card 1 -->
+        <div class="news-card" data-category="Business">
+          <a href="article.html">
+            <div class="news-card-image">
+              <img src="https://images.unsplash.com/photo-1709715357520-5e1047a2b691?w=800" alt="Stock markets">
+            </div>
+          </a>
+          <div class="news-card-content">
+            <div class="news-card-meta">
+              <span class="category-badge" style="background: #D1FAE5; color: #065F46;">Business</span>
+              <div class="time-ago">
+                <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span data-time="2025-12-12T08:30:00Z">2h ago</span>
+              </div>
+            </div>
+            
+            <a href="article.html"><h3 class="news-card-title">Global stock markets react to central bank signals</h3></a>
+            
+            <p class="news-card-excerpt">Major stock indices showed volatility following statements from central bank officials hinting at potential policy shifts.</p>
+            
+            <button class="expand-btn" aria-expanded="false">
+              <svg class="icon-sm chevron-down" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+              <svg class="icon-sm chevron-up hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+              </svg>
+              <span class="btn-text">Quick preview</span>
+            </button>
+            
+            <div class="card-preview hidden">
+              <p class="preview-text">Markets around the world experienced significant swings on Thursday as investors reacted to signals from major central banks about their monetary policy directions. The volatility came after Federal Reserve officials indicated they may hold interest rates higher for longer than previously anticipated...</p>
+              <a href="article.html" class="read-more">Read full article →</a>
+            </div>
+            
+            <div class="card-footer">
+              <div class="author-info">
+                <img src="https://i.pravatar.cc/150?u=author1" alt="Michael Torres" class="author-avatar">
+                <div>
+                  <div class="author-name">Michael Torres</div>
+                  <div class="reading-time">4 min read</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="action-btn share-btn" aria-label="Share">
+                  <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
+                  </svg>
+                </button>
+                <button class="action-btn" aria-label="Bookmark">
+                  <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Card 2 -->
+        <div class="news-card" data-category="Politics">
+          <a href="article.html">
+            <div class="news-card-image">
+              <img src="https://images.unsplash.com/photo-1580282121462-a4e495132f95?w=800" alt="Politics">
+            </div>
+          </a>
+          <div class="news-card-content">
+            <div class="news-card-meta">
+              <span class="category-badge" style="background: #DBEAFE; color: #1E40AF;">Politics</span>
+              <div class="time-ago">
+                <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span data-time="2025-12-12T06:15:00Z">4h ago</span>
+              </div>
+            </div>
+            
+            <a href="article.html"><h3 class="news-card-title">Ceasefire talks resume amid regional tensions</h3></a>
+            
+            <p class="news-card-excerpt">Diplomatic efforts intensified today as international mediators convened new rounds of ceasefire negotiations.</p>
+            
+            <button class="expand-btn" aria-expanded="false">
+              <svg class="icon-sm chevron-down" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+              <svg class="icon-sm chevron-up hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+              </svg>
+              <span class="btn-text">Quick preview</span>
+            </button>
+            
+            <div class="card-preview hidden">
+              <p class="preview-text">International mediators have reconvened ceasefire talks between conflicting parties, marking a renewed push for peace after weeks of escalating tensions. The negotiations, held in a neutral third country, bring together representatives from both sides along with officials from the United Nations...</p>
+              <a href="article.html" class="read-more">Read full article →</a>
+            </div>
+            
+            <div class="card-footer">
+              <div class="author-info">
+                <img src="https://i.pravatar.cc/150?u=author2" alt="Elena Rodriguez" class="author-avatar">
+                <div>
+                  <div class="author-name">Elena Rodriguez</div>
+                  <div class="reading-time">5 min read</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="action-btn share-btn" aria-label="Share">
+                  <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
+                  </svg>
+                </button>
+                <button class="action-btn" aria-label="Bookmark">
+                  <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Card 3 -->
+        <div class="news-card" data-category="Environment">
+          <a href="article.html">
+            <div class="news-card-image">
+              <img src="https://images.unsplash.com/photo-1584269958246-ef20a3fd2466?w=800" alt="Climate">
+            </div>
+          </a>
+          <div class="news-card-content">
+            <div class="news-card-meta">
+              <span class="category-badge" style="background: #D1FAE5; color: #065F46;">Environment</span>
+              <div class="time-ago">
+                <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span data-time="2025-12-12T04:45:00Z">6h ago</span>
+              </div>
+            </div>
+            
+            <a href="article.html"><h3 class="news-card-title">Breakthrough in climate summit negotiations</h3></a>
+            
+            <p class="news-card-excerpt">After days of intense negotiations, delegates reached a landmark agreement on emissions reductions.</p>
+            
+            <button class="expand-btn" aria-expanded="false">
+              <svg class="icon-sm chevron-down" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+              <svg class="icon-sm chevron-up hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+              </svg>
+              <span class="btn-text">Quick preview</span>
+            </button>
+            
+            <div class="card-preview hidden">
+              <p class="preview-text">In a significant development at this year's international climate summit, negotiators announced a breakthrough agreement that commits major economies to accelerated emissions reduction targets and establishes new funding mechanisms for climate adaptation in developing nations...</p>
+              <a href="article.html" class="read-more">Read full article →</a>
+            </div>
+            
+            <div class="card-footer">
+              <div class="author-info">
+                <img src="https://i.pravatar.cc/150?u=author3" alt="Alexandra Kim" class="author-avatar">
+                <div>
+                  <div class="author-name">Alexandra Kim</div>
+                  <div class="reading-time">6 min read</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button class="action-btn share-btn" aria-label="Share">
+                  <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
+                  </svg>
+                </button>
+                <button class="action-btn" aria-label="Bookmark">
+                  <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" style="margin-top: 3rem;">
+        <button aria-label="Previous page" disabled>
+          <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button class="active" data-page="1">1</button>
+        <button data-page="2">2</button>
+        <button data-page="3">3</button>
+        <button aria-label="Next page">
+          <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="subscribe-banner">
+        <div class="subscribe-icon">
+          <svg style="width: 2rem; height: 2rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        <h2>Stay Informed with BuzziNews</h2>
+        <p class="subscribe-description">
+          Get the day's most important stories delivered to your inbox. Fast summaries, original reporting, and the context you need.
+        </p>
+        
+        <form class="subscribe-form" id="subscribe-form">
+          <input type="email" placeholder="Enter your email" class="subscribe-input" required>
+          <button type="submit" class="subscribe-submit">Subscribe</button>
+        </form>
+        
+        <div class="subscribe-success hidden" id="subscribe-success">
+          <p>Thank you for subscribing! Check your email to confirm.</p>
+        </div>
+        
+        <p class="subscribe-note">Unsubscribe anytime. We respect your privacy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <div class="logo-icon">B</div>
+            <span style="font-weight: 700; font-size: 1.25rem;">BuzziNews</span>
+          </div>
+          <p class="footer-text">
+            Independent journalism covering global current affairs with clarity, speed, and context.
+          </p>
+        </div>
+        
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>Legal</h3>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="https://twitter.com" class="social-link" aria-label="Twitter">
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path></svg>
+            </a>
+            <a href="https://facebook.com" class="social-link" aria-label="Facebook">
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+            </a>
+            <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://instagram.com" class="social-link" aria-label="Instagram">
+              <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+          <a href="mailto:contact@buzzinews.online" class="footer-text" style="display: flex; align-items: center; gap: 0.5rem;">
+            <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            contact@buzzinews.online
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 BuzziNews. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

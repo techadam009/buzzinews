@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — BuzziNews</title>
+  <meta name="description" content="Learn about BuzziNews - independent journalism dedicated to covering global current affairs with clarity, speed, and context.">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">B</div>
+        <span>BuzziNews</span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="btn-icon" aria-label="Search">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </button>
+        <button class="btn-primary">Subscribe</button>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-actions">
+          <button class="btn-primary">Subscribe</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container" style="max-width: 56rem; text-align: center;">
+      <h1>About BuzziNews</h1>
+      <p class="hero-subtitle">
+        Independent journalism dedicated to covering global current affairs with clarity, speed, and context.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="section">
+    <div class="container" style="max-width: 56rem;">
+      <div style="font-size: 1.125rem; line-height: 1.75; color: var(--color-text-secondary);">
+        <p style="margin-bottom: 1.5rem;">
+          BuzziNews is an independent digital news outlet dedicated to covering global current affairs 
+          with clarity, speed, and context. Our mission is to provide busy readers with concise, reliable 
+          summaries and deeper reporting that helps them understand not just what happened — but why it matters.
+        </p>
+        
+        <p style="margin-bottom: 0;">
+          In an age of information overload, we cut through the noise to deliver the stories that shape 
+          our world. We believe that informed citizens make better decisions, and that quality journalism 
+          is essential to democracy and progress.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Grid -->
+  <section style="background: var(--color-background); padding: 4rem 0;">
+    <div class="container" style="max-width: 80rem;">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Our Editorial Approach</h2>
+      
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(230, 57, 70, 0.1);">
+            <svg style="width: 2rem; height: 2rem; color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 style="margin-bottom: 1rem;">Accuracy First</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: 0;">
+            We verify facts and cite primary sources whenever possible. Every story goes through 
+            rigorous fact-checking before publication.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(69, 123, 157, 0.1);">
+            <svg style="width: 2rem; height: 2rem; color: var(--color-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 style="margin-bottom: 1rem;">Concise Context</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: 0;">
+            We lead with the most important facts and add context to explain the stakes. 
+            No filler, no sensationalism — just the information you need.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon" style="background: rgba(16, 185, 129, 0.1);">
+            <svg style="width: 2rem; height: 2rem; color: var(--color-success);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 style="margin-bottom: 1rem;">Transparent Sourcing</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: 0;">
+            We link to official documents, statements, and original reporting. Our readers 
+            deserve to see where information comes from.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section">
+    <div class="container" style="max-width: 80rem;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="margin-bottom: 1rem;">Our Team</h2>
+        <p style="color: var(--color-text-muted); max-width: 42rem; margin: 0 auto;">
+          Our team combines experienced journalists, analysts, and editors across multiple regions 
+          who collaborate to deliver coverage from diverse perspectives.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://i.pravatar.cc/200?u=sarah" alt="Sarah Mitchell" class="team-avatar">
+          <h4 style="margin-bottom: 0.25rem;">Sarah Mitchell</h4>
+          <p class="team-role">Editor-in-Chief</p>
+        </div>
+
+        <div class="team-member">
+          <img src="https://i.pravatar.cc/200?u=david" alt="David Chen" class="team-avatar">
+          <h4 style="margin-bottom: 0.25rem;">David Chen</h4>
+          <p class="team-role">Senior Technology Reporter</p>
+        </div>
+
+        <div class="team-member">
+          <img src="https://i.pravatar.cc/200?u=elena" alt="Elena Rodriguez" class="team-avatar">
+          <h4 style="margin-bottom: 0.25rem;">Elena Rodriguez</h4>
+          <p class="team-role">International Correspondent</p>
+        </div>
+
+        <div class="team-member">
+          <img src="https://i.pravatar.cc/200?u=michael" alt="Michael Torres" class="team-avatar">
+          <h4 style="margin-bottom: 0.25rem;">Michael Torres</h4>
+          <p class="team-role">Business Editor</p>
+        </div>
+
+        <div class="team-member">
+          <img src="https://i.pravatar.cc/200?u=patel" alt="Dr. Sarah Patel" class="team-avatar">
+          <h4 style="margin-bottom: 0.25rem;">Dr. Sarah Patel</h4>
+          <p class="team-role">Science & Health Reporter</p>
+        </div>
+
+        <div class="team-member">
+          <img src="https://i.pravatar.cc/200?u=alex" alt="Alexandra Kim" class="team-avatar">
+          <h4 style="margin-bottom: 0.25rem;">Alexandra Kim</h4>
+          <p class="team-role">Environment Correspondent</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section style="background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-hover)); padding: 4rem 0;">
+    <div class="container" style="max-width: 56rem; text-align: center;">
+      <div class="subscribe-icon">
+        <svg style="width: 2rem; height: 2rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+      </div>
+      <h2 style="color: white; margin-bottom: 1rem;">Get in Touch</h2>
+      <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.125rem; margin-bottom: 2rem;">
+        Have a tip or question? We'd love to hear from you.
+      </p>
+      <a href="mailto:contact@buzzinews.online" class="btn-hero btn-hero-secondary" style="display: inline-block; background: white; color: var(--color-primary);">
+        contact@buzzinews.online
+      </a>
+    </div>
+  </section>
+
+  <!-- Commitment Section -->
+  <section class="section">
+    <div class="container" style="max-width: 56rem;">
+      <div style="background: var(--color-background); border-radius: var(--radius-2xl); padding: 2rem;">
+        <h3 style="margin-bottom: 1.5rem; text-align: center;">Our Commitment</h3>
+        <div style="display: flex; flex-direction: column; gap: 1rem; color: var(--color-text-secondary);">
+          <p>
+            <strong style="color: var(--color-text-primary);">Independence:</strong> We are editorially independent and committed to serving 
+            our readers, not special interests. Our funding comes from subscriptions and ethical advertising.
+          </p>
+          <p>
+            <strong style="color: var(--color-text-primary);">Diversity:</strong> We strive to represent diverse perspectives and voices in our 
+            coverage, recognizing that the issues we cover affect people differently around the world.
+          </p>
+          <p>
+            <strong style="color: var(--color-text-primary);">Accountability:</strong> We hold ourselves to the highest standards and welcome 
+            feedback. If we make mistakes, we correct them promptly and transparently.
+          </p>
+          <p style="margin-bottom: 0;">
+            <strong style="color: var(--color-text-primary);">Innovation:</strong> We embrace new storytelling formats and technologies that help 
+            us serve our audience better, while never compromising our editorial standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <div class="logo-icon">B</div>
+            <span style="font-weight: 700; font-size: 1.25rem;">BuzziNews</span>
+          </div>
+          <p class="footer-text">
+            Independent journalism covering global current affairs with clarity, speed, and context.
+          </p>
+        </div>
+        
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>Legal</h3>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="https://twitter.com" class="social-link" aria-label="Twitter">
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path></svg>
+            </a>
+            <a href="https://facebook.com" class="social-link" aria-label="Facebook">
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+            </a>
+            <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">
+              <svg class="icon-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://instagram.com" class="social-link" aria-label="Instagram">
+              <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+          <a href="mailto:contact@buzzinews.online" class="footer-text" style="display: flex; align-items: center; gap: 0.5rem;">
+            <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            contact@buzzinews.online
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2025 BuzziNews. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
